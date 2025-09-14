@@ -6,6 +6,16 @@ const path = require('path');
 const { v4: uuidv4 } = require('uuid');
 const moment = require('moment');
 
+const mongoose = require('mongoose');
+const { MONGODB_URI } = require('./config');
+
+mongoose.connect(MONGODB_URI, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true
+})
+.then(() => console.log('Connected to MongoDB Atlas'))
+.catch(err => console.error('MongoDB connection error:', err));
+
 const app = express();
 const server = http.createServer(app);
 const io = socketIo(server, {
