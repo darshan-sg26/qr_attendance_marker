@@ -1,6 +1,8 @@
+require('dotenv').config();  // Load environment variables from .env
+
 module.exports = {
   // MongoDB Atlas Connection
-  MONGODB_URI: 'mongodb+srv://darshansg46_db_user:GLoQUptW8mD8qtlQ@qrattendance.3oj53bl.mongodb.net/?retryWrites=true&w=majority&appName=qrattendance',
+  MONGODB_URI: process.env.MONGO_URI,
   
   // Server Configuration
   PORT: process.env.PORT || 3000,
