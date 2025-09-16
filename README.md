@@ -1,4 +1,4 @@
-# QR-Based Attendance System (Cloud Edition)
+# QR-Based Attendance Marker System (Cloud Edition)
 
 A comprehensive cloud-based attendance system that uses QR codes and face verification to prevent proxy attendance. The system is connected to MongoDB Atlas for cloud data storage and includes advanced security features.
 
@@ -125,3 +125,4 @@ proj_2/
 - Analytics and reporting features
 - Multi-classroom support
 - Admin dashboard
+
